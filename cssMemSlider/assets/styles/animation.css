@@ -16,8 +16,16 @@
         opacity: .1;
         transform: translate(3rem);
     }
-    50% {
+    70% {
         /*     border: 3px solid #000; */
         color: rgb(92, 156, 230);
+        transform: rotateY(30deg);
     }
+}
+
+@keyframes ccc {
+    50% {
+        transform: translateY(-1rem);
+    }
+    70% {}
 }

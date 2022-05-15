@@ -9,30 +9,10 @@
     width: 100%;
 }
 
-#r1:checked~.q {
-    animation-name: aaa;
-    animation-duration: 2.5s;
-    transition: 1s;
-}
-
-#r2:checked~.w {
-    animation-name: aaa;
-    animation-duration: 2.5s;
-    transition: 1s;
-}
-
-#r3:checked~.e {
-    animation-name: aaa;
-    animation-duration: 2.5s;
-    transition: 1s;
-}
-
-#r4:checked~.r {
-    animation-name: aaa;
-    animation-duration: 2.5s;
-    transition: 1s;
-}
-
+#r1:checked~.q,
+#r2:checked~.w,
+#r3:checked~.e,
+#r4:checked~.r,
 #r5:checked~.t {
     animation-name: aaa;
     animation-duration: 2.5s;
@@ -41,12 +21,6 @@
 
 #r1:checked~.slide {
     transform: translate(0rem);
-    transition: 1s;
-}
-
-#r1:checked~.slide>.p {
-    animation-name: bbb;
-    animation-duration: 4.5s;
     transition: 1s;
 }
 
@@ -67,5 +41,15 @@
 
 #r5:checked~.slide {
     transform: translate(-192rem);
+    transition: 1s;
+}
+
+#r1:checked~.slide>.p1,
+#r2:checked~.slide>.p2,
+#r3:checked~.slide>.p3,
+#r4:checked~.slide>.p4,
+#r5:checked~.slide>.p5 {
+    animation-name: bbb;
+    animation-duration: 2s;
     transition: 1s;
 }

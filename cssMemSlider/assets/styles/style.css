@@ -1,12 +1,12 @@
 @import 'slides.css';
 @import 'animation.css';
 * {
-    font-size: 16px;
+    font-size: 18px;
     box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(219, 238, 250);
+    background-color: rgb(193, 229, 252);
 }
 
 .wrapper {
@@ -23,7 +23,7 @@ body {
     border-radius: 1rem;
     margin: 0 auto;
     max-width: 48rem;
-    max-height: 48rem;
+    height: 33rem;
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -104,17 +104,16 @@ body {
     border-radius: 1rem;
     height: 0.7rem;
     background-color: #7872D8;
-    border: 1px solid #0E0874;
-    margin: 0 0.6rem;
+    border: 1px solid #dddce7;
+    margin: 0.6rem 0.3rem;
     cursor: pointer;
 }
 
-.bar:hover {
-    /*   background-color: blue; */
-    background: url('');
+.label:hover.label>.bar {
+    background-color: blue;
 }
 
-.bar:active {
+.label:active.label>.bar {
     background-color: #FFEC00;
 }
 
@@ -125,62 +124,46 @@ body {
     z-index: 20;
 }
 
-.bar1 {
-    margin-left: 33rem;
+.label1 {
+    margin-left: 32rem;
 }
 
-.bar2 {
-    margin-left: 36rem;
+.label2 {
+    margin-left: 35rem;
 }
 
-.bar3 {
-    margin-left: 39rem;
+.label3 {
+    margin-left: 38rem;
 }
 
-.bar4 {
-    margin-left: 42rem;
+.label4 {
+    margin-left: 41rem;
 }
 
-.bar5 {
-    margin-left: 45rem;
+.label5 {
+    margin-left: 44rem;
 }
 
-#r1:checked~.bar1 {
+.label {
+    margin-top: 30.6rem;
+    grid-area: 1/1;
+    display: inline-block;
+    width: 2.6rem;
+    height: 2.8em;
+    cursor: pointer;
+}
+
+#r1:checked~.label>.bar1,
+#r2:checked~.label>.bar2,
+#r3:checked~.label>.bar3,
+#r4:checked~.label>.bar4,
+#r5:checked~.label>.bar5 {
+    animation-name: ccc;
+    animation-duration: .5s;
+    transition: 1s;
     background-color: red;
     width: 1rem;
     height: 1rem;
     transition: .5s;
     transform: translate(0.5rem, -0.2rem);
-}
-
-#r2:checked~.bar2 {
-    background-color: red;
-    width: 1rem;
-    height: 1rem;
-    transition: .5s;
-    transform: translate(0.5rem, -0.2rem);
-}
-
-#r3:checked~.bar3 {
-    background-color: red;
-    width: 1rem;
-    height: 1rem;
-    transition: .5s;
-    transform: translate(0.5rem, -0.2rem);
-}
-
-#r4:checked~.bar4 {
-    background-color: red;
-    width: 1rem;
-    height: 1rem;
-    transition: .5s;
-    transform: translate(0.5rem, -0.2rem);
-}
-
-#r5:checked~.bar5 {
-    background-color: red;
-    width: 1rem;
-    height: 1rem;
-    transition: .5s;
-    transform: translate(0.5rem, -0.25rem);
 }
