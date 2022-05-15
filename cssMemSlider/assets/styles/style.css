@@ -1,7 +1,12 @@
+@import 'slides.css';
 @import 'animation.css';
 * {
     font-size: 16px;
     box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(219, 238, 250);
 }
 
 .wrapper {
@@ -9,7 +14,7 @@
     padding-left: 2rem;
     padding-right: 2rem;
     max-width: 60rem;
-    height: 45rem;
+    height: 48rem;
     margin: 0 auto;
     background-color: #052A6E;
 }
@@ -18,18 +23,11 @@
     border-radius: 1rem;
     margin: 0 auto;
     max-width: 48rem;
-    max-height: 40rem;
+    max-height: 48rem;
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     background-color: #052A6E;
-}
-
-.slide {
-    width: 48rem;
-    max-height: 30rem;
-    transition: 5s;
-    /*   border: 0.3rem solid darkblue; */
 }
 
 .input {
@@ -81,69 +79,22 @@
     background-color: #777;
 }
 
+.smile {
+    height: 1.5rem;
+    width: 1.5rem;
+    z-index: 26;
+}
+
 .p {
-    display: block;
+    display: inline-block;
     font-size: 1.5rem;
     animation-name: b;
     animation-duration: 5s;
     transition: 1s;
-    margin-top: 31rem;
-    margin-left: 5rem;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
     color: #fff;
-}
-
-#r1:checked~.q {
-    animation-name: aaa;
-    animation-duration: 3s;
-    transition: 1s;
-}
-
-#r2:checked~.w {
-    animation-name: aaa;
-    animation-duration: 3s;
-    transition: 1s;
-}
-
-#r3:checked~.e {
-    animation-name: aaa;
-    animation-duration: 3s;
-    transition: 1s;
-}
-
-#r4:checked~.r {
-    animation-name: aaa;
-    animation-duration: 3s;
-    transition: 1s;
-}
-
-#r5:checked~.t {
-    animation-name: aaa;
-    animation-duration: 3s;
-    transition: 1s;
-}
-
-#r1:checked~.slide {
-    transform: translate(0rem);
-    transition: 1s;
-}
-
-#r2:checked~.slide {
-    transform: translate(-48rem);
-    transition: 1s;
-}
-
-#r3:checked~.slide {
-    transform: translate(-96rem);
-    transition: 1s;
-}
-
-#r4:checked~.slide {
-    transform: translate(-144rem);
-    transition: 1s;
-}
-
-#r5:checked~.slide {
-    transform: translate(-192rem);
+    z-index: 25;
     transition: 1s;
 }
 
@@ -151,7 +102,7 @@
     display: inline-block;
     width: 2rem;
     border-radius: 1rem;
-    height: 0.5rem;
+    height: 0.7rem;
     background-color: #7872D8;
     border: 1px solid #0E0874;
     margin: 0 0.6rem;
@@ -168,30 +119,30 @@
 }
 
 .navigation {
-    margin-top: 60%;
+    margin-top: 31.3rem;
     margin-left: 3.5rem;
     grid-area: 1/1;
     z-index: 20;
 }
 
 .bar1 {
-    margin-left: 5rem;
+    margin-left: 33rem;
 }
 
 .bar2 {
-    margin-left: 8rem;
+    margin-left: 36rem;
 }
 
 .bar3 {
-    margin-left: 11rem;
+    margin-left: 39rem;
 }
 
 .bar4 {
-    margin-left: 14rem;
+    margin-left: 42rem;
 }
 
 .bar5 {
-    margin-left: 17rem;
+    margin-left: 45rem;
 }
 
 #r1:checked~.bar1 {

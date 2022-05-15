@@ -1,0 +1,71 @@
+.slide {
+    width: 48rem;
+    max-height: 28.8rem;
+    transition: 5s;
+    /*   border: 0.3rem solid darkblue; */
+}
+
+.img {
+    width: 100%;
+}
+
+#r1:checked~.q {
+    animation-name: aaa;
+    animation-duration: 2.5s;
+    transition: 1s;
+}
+
+#r2:checked~.w {
+    animation-name: aaa;
+    animation-duration: 2.5s;
+    transition: 1s;
+}
+
+#r3:checked~.e {
+    animation-name: aaa;
+    animation-duration: 2.5s;
+    transition: 1s;
+}
+
+#r4:checked~.r {
+    animation-name: aaa;
+    animation-duration: 2.5s;
+    transition: 1s;
+}
+
+#r5:checked~.t {
+    animation-name: aaa;
+    animation-duration: 2.5s;
+    transition: 1s;
+}
+
+#r1:checked~.slide {
+    transform: translate(0rem);
+    transition: 1s;
+}
+
+#r1:checked~.slide>.p {
+    animation-name: bbb;
+    animation-duration: 4.5s;
+    transition: 1s;
+}
+
+#r2:checked~.slide {
+    transform: translate(-48rem);
+    transition: 1s;
+}
+
+#r3:checked~.slide {
+    transform: translate(-96rem);
+    transition: 1s;
+}
+
+#r4:checked~.slide {
+    transform: translate(-144rem);
+    transition: 1s;
+}
+
+#r5:checked~.slide {
+    transform: translate(-192rem);
+    transition: 1s;
+}

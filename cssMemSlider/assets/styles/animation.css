@@ -3,22 +3,21 @@
         /*     border: 5px solid red; */
         opacity: .1;
     }
-    ;
-    50% {
+    40% {
         /*     border: 3px solid #000; */
-        opacity: 1;
+        opacity: .1;
     }
 }
 
-@keyframes b {
+@keyframes bbb {
     0% {
-        /*     border: 5px solid red; */
+        color: aqua;
+        /* font-size: large; */
         opacity: .1;
+        transform: translate(3rem);
     }
-    ;
-    90% {
+    50% {
         /*     border: 3px solid #000; */
-        display: block;
-        font-color: red;
+        color: rgb(92, 156, 230);
     }
 }
