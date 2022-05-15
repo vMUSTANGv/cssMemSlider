@@ -1,0 +1,24 @@
+@keyframes aaa {
+    0% {
+        /*     border: 5px solid red; */
+        opacity: .1;
+    }
+    ;
+    50% {
+        /*     border: 3px solid #000; */
+        opacity: 1;
+    }
+}
+
+@keyframes b {
+    0% {
+        /*     border: 5px solid red; */
+        opacity: .1;
+    }
+    ;
+    90% {
+        /*     border: 3px solid #000; */
+        display: block;
+        font-color: red;
+    }
+}
