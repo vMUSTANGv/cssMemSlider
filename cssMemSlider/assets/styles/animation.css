@@ -1,31 +1,35 @@
 @keyframes aaa {
     0% {
         /*     border: 5px solid red; */
-        opacity: .1;
+        opacity: .3;
     }
     40% {
         /*     border: 3px solid #000; */
-        opacity: .1;
+        opacity: .4;
     }
 }
 
 @keyframes bbb {
-    0% {
-        color: aqua;
-        /* font-size: large; */
+    10% {
+        /*     border: 5px solid red; */
+        color: #CC9999;
         opacity: .1;
-        transform: translate(3rem);
     }
-    70% {
+    80% {
+        font-size: 1rem;
         /*     border: 3px solid #000; */
-        color: rgb(92, 156, 230);
-        transform: rotateY(30deg);
+        color: #003333;
     }
 }
 
 @keyframes ccc {
-    50% {
-        transform: translateY(-1rem);
+    70% {
+        transform: rotate(3turn);
     }
-    70% {}
+}
+
+@keyframes aniBar {
+    50% {
+        transform: translateY(-2rem);
+    }
 }
