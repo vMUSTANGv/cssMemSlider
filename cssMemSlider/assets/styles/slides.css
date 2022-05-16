@@ -44,13 +44,13 @@
     transition: 1s;
 }
 
-#r2:checked~.p {
+#r1:checked~.p1 {
     transform: translate(0%);
     transition: 1s;
 }
 
-#r2:checked~.p {
-    transform: translate(-48rem);
+#r2:checked~.p2 {
+    transform: translate(-60rem);
     transition: 1s;
 }
 
@@ -75,7 +75,7 @@
 #r4:checked~.slide>.p4,
 #r5:checked~.slide>.p5 {
     animation-name: bbb;
-    animation-duration: 2s;
+    animation-duration: 1s;
     transition: 1s;
 }
 
@@ -85,6 +85,6 @@
 #r4:checked~.slide>.p>.smile4,
 #r5:checked~.slide>.p>.smile5 {
     animation-name: ccc;
-    animation-duration: 3.5s;
+    animation-duration: 2.5s;
     transition: 1s;
 }
