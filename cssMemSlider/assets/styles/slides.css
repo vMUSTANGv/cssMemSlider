@@ -1,6 +1,6 @@
 .slide {
-    width: 48rem;
-    max-height: 28.8rem;
+    width: 100%;
+    /* max-height: 28rem; */
     transition: 5s;
     /*   border: 0.3rem solid darkblue; */
 }
@@ -25,22 +25,47 @@
 }
 
 #r2:checked~.slide {
-    transform: translate(-48rem);
+    transform: translate(-100%);
     transition: 1s;
 }
 
 #r3:checked~.slide {
-    transform: translate(-96rem);
+    transform: translate(-200%);
     transition: 1s;
 }
 
 #r4:checked~.slide {
-    transform: translate(-144rem);
+    transform: translate(-300%);
     transition: 1s;
 }
 
 #r5:checked~.slide {
-    transform: translate(-192rem);
+    transform: translate(-400%);
+    transition: 1s;
+}
+
+#r2:checked~.p {
+    transform: translate(0%);
+    transition: 1s;
+}
+
+#r2:checked~.p {
+    transform: translate(-48rem);
+    transition: 1s;
+}
+
+#r3:checked~.p {
+    transform: translate(-365%);
+    transition: 1s;
+}
+
+#r4:checked~.p {
+    transform: translate(-550%);
+    transition: 1s;
+}
+
+#r5:checked~.p {
+    transform: translate(-735%);
     transition: 1s;
 }
 

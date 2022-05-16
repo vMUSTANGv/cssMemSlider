@@ -30,6 +30,6 @@
 
 @keyframes aniBar {
     50% {
-        transform: translateY(-2rem);
+        transform: translateY(-1.1rem);
     }
 }

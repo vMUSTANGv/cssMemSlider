@@ -1,7 +1,7 @@
 @import 'slides.css';
 @import 'animation.css';
 * {
-    font-size: 18px;
+    font-size: 16px;
     box-sizing: border-box;
 }
 
@@ -14,8 +14,8 @@ body {
     padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    max-width: 51rem;
-    height: 47rem;
+    max-width: 52rem;
+    height: 60rem;
     margin: 0 auto;
     background-color: rgb(171 171 156 / 1);
 }
@@ -23,12 +23,14 @@ body {
 .container {
     border-radius: 1rem;
     margin: 0 auto;
-    max-width: 48rem;
-    height: 33rem;
+    width: 100%;
+    max-height: 100%;
     overflow: hidden;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 100%);
+    grid-template-rows: 1fr .1fr;
     background-color: #CCCC99;
+    align-items: start;
 }
 
 .input {
@@ -54,49 +56,29 @@ body {
 }
 
 .q {
-    background-color: #666;
     grid-area: 1/1;
-    /*   z-index: 1; */
 }
 
 .w {
-    background-color: cyan;
-    /*   z-index: 0; */
     grid-area: 1/2;
 }
 
 .e {
-    background-color: darkcyan;
     grid-area: 1/3;
 }
 
 .r {
-    background-color: #666;
     grid-area: 1/4;
 }
 
 .t {
     grid-area: 1/5;
-    background-color: #777;
 }
 
 .smile {
     height: 1.5rem;
     width: 1.5rem;
     z-index: 26;
-}
-
-.p {
-    display: inline-block;
-    font-size: 1.5rem;
-    animation-name: b;
-    animation-duration: 5s;
-    transition: 1s;
-    margin-top: 1.5rem;
-    margin-left: 1rem;
-    color: #666699;
-    z-index: 25;
-    transition: 1s;
 }
 
 .bar {
@@ -125,40 +107,61 @@ body {
     z-index: 20;
 }
 
-.label1 {
-    margin-left: 32rem;
+.label-container {
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    grid-area: 2/1;
 }
 
-.label2 {
-    margin-left: 35rem;
+.p {
+    display: block;
+    max-width: 26rem;
+    height: 3rem;
+    font-size: 1.3rem;
+    animation-name: b;
+    animation-duration: 5s;
+    transition: 1s;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: #666699;
+    z-index: 25;
+    transition: 1s;
 }
 
-.label3 {
-    margin-left: 38rem;
+.p1 {
+    grid-area: 2/1;
+    display: block;
 }
 
-.label4 {
-    margin-left: 41rem;
+.p2 {
+    grid-area: 2/2;
+    display: block;
 }
 
-.label5 {
-    margin-left: 44rem;
+.p3 {
+    grid-area: 2/3;
+    display: block;
 }
 
-.label {
-    margin-top: 30.6rem;
-    grid-area: 1/1;
-    display: inline-block;
-    width: 2.6rem;
-    height: 2.8em;
-    cursor: pointer;
+.p4 {
+    grid-area: 2/4;
+    display: block;
 }
 
-#r1:checked~.label>.bar1,
-#r2:checked~.label>.bar2,
-#r3:checked~.label>.bar3,
-#r4:checked~.label>.bar4,
-#r5:checked~.label>.bar5 {
+.p5 {
+    grid-area: 2/5;
+    display: block;
+}
+
+#r1:checked~.label-container>.label>.bar1,
+#r2:checked~.label-container>.label>.bar2,
+#r3:checked~.label-container>.label>.bar3,
+#r4:checked~.label-container>.label>.bar4,
+#r5:checked~.label-container>.label>.bar5 {
     animation-name: aniBar;
     animation-duration: .5s;
     transition: 1s;
