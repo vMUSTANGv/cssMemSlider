@@ -1,23 +1,19 @@
 @keyframes aaa {
     0% {
-        /*     border: 5px solid red; */
         opacity: .3;
     }
     40% {
-        /*     border: 3px solid #000; */
         opacity: .4;
     }
 }
 
 @keyframes bbb {
     10% {
-        /*     border: 5px solid red; */
         color: #CC9999;
         opacity: .1;
     }
     80% {
         font-size: 1rem;
-        /*     border: 3px solid #000; */
         color: #003333;
     }
 }

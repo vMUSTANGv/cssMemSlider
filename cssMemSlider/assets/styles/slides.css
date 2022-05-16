@@ -76,7 +76,6 @@
 #r5:checked~.slide>.p5 {
     animation-name: bbb;
     animation-duration: 1s;
-    transition: 1s;
 }
 
 #r1:checked~.slide>.p>.smile1,
@@ -86,5 +85,4 @@
 #r5:checked~.slide>.p>.smile5 {
     animation-name: ccc;
     animation-duration: 2.5s;
-    transition: 1s;
 }
