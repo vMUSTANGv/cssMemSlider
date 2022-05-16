@@ -1,0 +1,31 @@
+@keyframes aaa {
+    0% {
+        opacity: .3;
+    }
+    40% {
+        opacity: .4;
+    }
+}
+
+@keyframes bbb {
+    10% {
+        color: #CC9999;
+        opacity: .1;
+    }
+    80% {
+        font-size: 1rem;
+        color: #003333;
+    }
+}
+
+@keyframes ccc {
+    70% {
+        transform: rotate(3turn);
+    }
+}
+
+@keyframes aniBar {
+    50% {
+        transform: translateY(-1.1rem);
+    }
+}

@@ -1,0 +1,31 @@
+.footer-container {
+    padding-bottom: 1.2rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.footerImage {
+    width: 5rem;
+}
+
+.footer-image:hover {
+    cursor: pointer;
+    transform: translateY(-.1rem);
+}
+
+.fi1 {
+    width: 4rem;
+}
+
+.fi2 {
+    width: 1.5rem;
+}
+
+.fi3 {
+    width: 7rem;
+}

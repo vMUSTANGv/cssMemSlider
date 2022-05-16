@@ -1,0 +1,88 @@
+.slide {
+    width: 100%;
+    /* max-height: 28rem; */
+    transition: 5s;
+    /*   border: 0.3rem solid darkblue; */
+}
+
+.img {
+    width: 100%;
+}
+
+#r1:checked~.q,
+#r2:checked~.w,
+#r3:checked~.e,
+#r4:checked~.r,
+#r5:checked~.t {
+    animation-name: aaa;
+    animation-duration: 2.5s;
+    transition: 1s;
+}
+
+#r1:checked~.slide {
+    transform: translate(0rem);
+    transition: 1s;
+}
+
+#r2:checked~.slide {
+    transform: translate(-100%);
+    transition: 1s;
+}
+
+#r3:checked~.slide {
+    transform: translate(-200%);
+    transition: 1s;
+}
+
+#r4:checked~.slide {
+    transform: translate(-300%);
+    transition: 1s;
+}
+
+#r5:checked~.slide {
+    transform: translate(-400%);
+    transition: 1s;
+}
+
+#r1:checked~.p1 {
+    transform: translate(0%);
+    transition: 1s;
+}
+
+#r2:checked~.p2 {
+    transform: translate(-60rem);
+    transition: 1s;
+}
+
+#r3:checked~.p {
+    transform: translate(-365%);
+    transition: 1s;
+}
+
+#r4:checked~.p {
+    transform: translate(-550%);
+    transition: 1s;
+}
+
+#r5:checked~.p {
+    transform: translate(-735%);
+    transition: 1s;
+}
+
+#r1:checked~.slide>.p1,
+#r2:checked~.slide>.p2,
+#r3:checked~.slide>.p3,
+#r4:checked~.slide>.p4,
+#r5:checked~.slide>.p5 {
+    animation-name: bbb;
+    animation-duration: 1s;
+}
+
+#r1:checked~.slide>.p>.smile1,
+#r2:checked~.slide>.p>.smile2,
+#r3:checked~.slide>.p>.smile3,
+#r4:checked~.slide>.p>.smile4,
+#r5:checked~.slide>.p>.smile5 {
+    animation-name: ccc;
+    animation-duration: 2.5s;
+}
